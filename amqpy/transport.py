@@ -41,7 +41,7 @@ class Transport(metaclass=ABCMeta):
         #: :type: datetime.datetime
         self.last_heartbeat_sent = None
         #: :type: datetime.datetime
-        self.last_heartbeat_received = None
+        self.last_heartbeat_received = datetime.datetime.now()
 
         self.last_heartbeat_sent_monotonic = 0.0
 
